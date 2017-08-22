@@ -12,7 +12,8 @@ const Address = ({address}) => {
             <div style={{'width':'40%', 'float': 'left', 'textAlign': 'left', 'padding': '10px 20px'}}>
              { Object.keys(address).map((prop) => (typeof address[prop] == 'string' ? <p>{address[prop]}</p> : '')) }
             </div>           
-             <div style={{ 'clear': 'both'}}></div>             
+             <div style={{ 'clear': 'both'}}></div>      
+             <hr/>       
         </div>
     );
 };
