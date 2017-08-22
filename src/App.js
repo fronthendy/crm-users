@@ -10,9 +10,9 @@ import './App.css';
 const fetchUser = () => {
   return new Promise((resolve) => {
       const user = faker.helpers.createCard();
-      // setTimeout(() => {
+      setTimeout(() => {
         resolve(user)
-      // }, 3000);
+      }, 1000);
   })
 
   return faker.helpers.createCard();
@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
           <Toolbar>
-            <h2>{(this.state.user ? this.state.user.name : 'Usuario não encontrado')}</h2>
+            <h2>{(this.state.user ? this.state.user.name : 'Loading...')}</h2>
           </Toolbar>
           <AccountHistory history={(this.state.user ? this.state.user.accountHistory : [])} />
           <Address address={(this.state.user ? this.state.user.address : {})} />

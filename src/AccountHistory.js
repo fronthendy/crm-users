@@ -1,14 +1,6 @@
 import React from 'react';
 import Subheader from 'material-ui/Subheader';
-import Chip from 'material-ui/Chip';
 import AccountItem from './AccountItem';
-
-const styles = {
-    chip: {
-        float: 'left',
-        'margin': '0 5px'
-    }
-};
 
 const AccountHistory = ({history}) => {
     return (
